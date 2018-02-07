@@ -22,12 +22,6 @@
   <% } %>
 
   <!-- Async Google Analytics: change UA-71073175-1 to be your site's ID -->
-  <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', 'UA-71073175-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
   <!-- End Google Analytics -->
 
   <!-- CSS will be injected by webpack here -->
@@ -41,6 +35,19 @@
     Loading...
   </app>
 
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCXnkyfPwwByNNdzgQOSg93ZcbutLVlGY4",
+      authDomain: "starly-2b6fb.firebaseapp.com",
+      databaseURL: "https://starly-2b6fb.firebaseio.com",
+      projectId: "starly-2b6fb",
+      storageBucket: "",
+      messagingSenderId: "850879473338"
+    };
+    firebase.initializeApp(config);
+  </script>
   <!-- Scripts will be injected by webpack here -->
 </body>
 </html>

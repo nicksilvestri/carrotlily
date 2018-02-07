@@ -20,8 +20,8 @@ import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { DevModuleModule } from './+dev-module';
 
-import '../styles/styles.scss';
-import '../styles/headings.css';
+//import normalize.css before any other styles for cross browser consistency
+import '../../node_modules/normalize.css';
 
 // Application wide providers
 const APP_PROVIDERS = [
